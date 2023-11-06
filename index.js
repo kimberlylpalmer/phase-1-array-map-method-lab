@@ -13,8 +13,8 @@ const tutorials = [
 
 
 const titleCased = () => {
-  return tutorials.map(tutorialString => {
-    return tutorialString.split(" ").map(stringWord => {
+  return tutorials.map(tutString => {
+    return tutString.split(" ").map(stringWord => {
       return stringWord[0].toUpperCase() + stringWord.slice(1);
     }).join(" ");
   });
